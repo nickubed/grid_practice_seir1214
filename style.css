@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 200px 1fr 1fr 120px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:    "header header header"
+                            "sidebar coolbeans coolbeans"
+                            "sidebar main main"
+                            "sidebar footer footer"
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+    border: 5px solid black;
+}
+
+main {
+    grid-area: main;
+    background-color: chartreuse;
+    /* background-image: url('http://placekitten.com/200/200'); */
+
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: magenta;
+}
+
+footer {
+    grid-area: footer;
+    background-color: antiquewhite;
+}
+
+.neat {
+    grid-area: coolbeans;
+    background-color: cornflowerblue;
+}
